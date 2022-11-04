@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap");
+
+:root {
+    --cor-de-fundo: #E7E6E6B7;
+    --fonte-principal: "Montserrat", sans-serif !important;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --laranja-01: #FF8B06;
+    --laranja-02: #ff7300;
+    --laranja-03: #fc5c00;
+    --roxo-01: #632778;
+    --roxo-02: #BA68C8;
+    --cor-sombra: #3F3F3FBD;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-principal) !important;
+    font-size: 16px !important;
+}
+
+.divFormu {
+    margin: 1rem auto 1rem auto;
+    border-radius: 1rem;
+    border-width: 0 10px 16px 0;
+    border-style: solid;
+    border-color: var(--laranja-01);
+    box-shadow: 4px 5px 15px var(--cor-sombra);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--roxo-02) !important;
+}
+
+.btn {
+    box-shadow: 1px 1px 5px var(--cor-sombra) !important;
+    white-space: nowrap;
+    color: var(--preto);
+}
+
+.btn-danger {
+    background-color: var(--laranja-01) !important;
+    border-color: var(--laranja-02) !important;
+}
+
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger:hover {
+    background-color: var(--laranja-03) !important;
+    border-color: 2px solid var(--preto) !important;
+    outline: none !important;
+    border: 1px solid var(--preto) !important;
+    color: var(--branco) !important;
+}
+
+.btn-danger {
+    border: 1px solid var(--preto) !important;
+    color: 4px solid var(--preto) !important;
+}
+
+/* .profile-button {
+    background: var(--laranja-01);
+    box-shadow: none;
+    border: none;
+} */
+
+/* .profile-button:hover {
+    background: var(--laranja-03);
+}
+
+.profile-button:focus {
+    background: var(--roxo-01);
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: var(--roxo-01);
+    box-shadow: none;
+} */
+
+.back:hover {
+    color: var(--roxo-01);
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: var(--roxo-02);
+    color: var(--branco);
+    cursor: pointer;
+    border: solid 1px var(--roxo-02);
+}
