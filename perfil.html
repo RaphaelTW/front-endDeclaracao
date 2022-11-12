@@ -125,7 +125,8 @@
                 <div class="col-md-3 border-right">
                     <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                         <img class="rounded-circle mt-5" width="150px"
-                             src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="">
+                             src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+                             alt="">
                         <span class="font-weight-bold">Exemplo Nome do Usuário</span>
                         <span class="text-black-50">exemplo.email@viaexpressa.com</span>
                     </div>
@@ -141,26 +142,30 @@
 
                         <div class="row mt-2">
                             <div class="col-md-6">
-                                <label class="labels">Nome</label>
-                                <input type="text" class="form-control bg-light" placeholder="Seu nome" value="">
+                                <label class="labels" for="nome">Nome</label>
+                                <input type="text" id="nome" class="form-control bg-light" placeholder="Seu nome"
+                                       value="">
                             </div>
 
                             <div class="col-md-6">
-                                <label class="labels">Sobrenome</label>
-                                <input type="text" class="form-control bg-light" value="" placeholder="Seu sobrenome">
+                                <label class="labels" for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" class="form-control bg-light" value=""
+                                       placeholder="Seu sobrenome">
                             </div>
                         </div>
 
                         <div class="row mt-3">
                             <div class="col-md-12">
-                                <label class="labels">Número de Celular</label>
-                                <input type="text" class="form-control bg-light" placeholder="ex 011 9-0000-0000"
+                                <label class="labels" for="numero">Número de Celular</label>
+                                <input type="text" id="numero" class="form-control bg-light"
+                                       placeholder="ex 011 9-0000-0000"
                                        value="">
                             </div>
 
                             <div class="col-md-12 my-3">
-                                <label class="labels">Email</label>
-                                <input type="email" class="form-control bg-light" placeholder="exemplo@exemplo.com"
+                                <label class="labels" for="email">Email</label>
+                                <input type="email" id="email" class="form-control bg-light"
+                                       placeholder="exemplo@exemplo.com"
                                        value="">
                             </div>
 
@@ -185,25 +190,28 @@
 
                         <div class="row mt-3">
                             <div class="col-md-12 my-2">
-                                <label class="labels">CEP</label>
-                                <input type="text" class="form-control bg-light" placeholder="00.000-000" value="">
+                                <label class="labels" for="cep">CEP</label>
+                                <input type="text" id="cep" class="form-control bg-light" placeholder="00.000-000"
+                                       value="">
                             </div>
 
                             <div class="col-md-12 my-2">
-                                <label class="labels">Endereço</label>
-                                <input type="text" class="form-control bg-light" placeholder="Nome da Rua ou Avenida"
+                                <label class="labels" for="endereco">Endereço</label>
+                                <input type="text" id="endereco" class="form-control bg-light"
+                                       placeholder="Nome da Rua ou Avenida"
                                        value="">
                             </div>
 
                             <div class="col-md-6">
-                                <label class="labels">Cidade</label>
-                                <input type="text" class="form-control bg-light" placeholder="São Paulo" value="">
+                                <label class="labels" for="cidade">Cidade</label>
+                                <input type="text" id="cidade" class="form-control bg-light" placeholder="São Paulo"
+                                       value="">
                             </div>
 
                             <div class="col-md-6">
-                                <label class="labels">Estado</label>
-                                <select list="" type="text" placeholder="SP"
-                                        class="form-control text-primary bg-light" Montserrat-labelledby billing
+                                <label class="labels" for="uf">Estado</label>
+                                <select list="" type="text"
+                                        class="form-control text-primary bg-light"
                                         name="nome" id="uf">
                                     <option value="">...</option>
                                     <option value="AC">AC</option>
@@ -254,10 +262,9 @@
                         <hr>
 
                         <div class="col-md-12">
-                            <label class="labels">Estilo Usuário</label>
-                            <select list="" type="text" placeholder="SP" class="form-control text-primary bg-light"
-                                    Montserrat-labelledby billing name="nome" id="uf"
-                                    onfocusout="verificarCampo('inputNome')" required>
+                            <label class="labels" for="user">Estilo Usuário</label>
+                            <select type="text" id="user" class="form-control text-primary bg-light"
+                                    name="nome" onfocusout="verificarCampo('inputNome')" required>
                                 <option value="">...</option>
                                 <option value="ADM">ADM</option>
                                 <option value="COM">COMUM</option>
@@ -267,8 +274,8 @@
                         <br>
 
                         <div class="col-md-12">
-                            <label class="labels">Agencia</label>
-                            <input type="text" class="form-control bg-light" placeholder="000000" value="">
+                            <label class="labels" for="agencia">Agencia</label>
+                            <input type="text" id="agencia" class="form-control bg-light" placeholder="000000" value="">
                         </div>
                     </div>
                 </div>
